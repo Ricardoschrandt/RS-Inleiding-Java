@@ -1,4 +1,4 @@
-//Voorbeeld 4.1
+package h2;//Voorbeeld 4.1
 
 import java.awt.*;
 import java.applet.*;
