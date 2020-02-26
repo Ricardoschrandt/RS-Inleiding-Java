@@ -3,7 +3,7 @@ package h4;//Voorbeeld 4.1
 import java.awt.*;
 import java.applet.*;
 
-public class Showing extends Applet {
+public class opdracht41en42 extends Applet {
 
     public void init() {
     }
