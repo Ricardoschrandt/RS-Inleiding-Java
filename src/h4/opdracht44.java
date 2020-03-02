@@ -7,6 +7,7 @@ public class opdracht44 extends Applet {
 
 
     public void paint(Graphics g){
+        
         g.drawLine(200,40,200,200);
         g.drawLine(40,40,200,40);
         g.drawString("50kg", 10, 120);
