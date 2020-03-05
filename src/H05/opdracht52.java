@@ -5,28 +5,48 @@ import java.awt.*;
 
 public class opdracht52 extends Applet  {
 
-    public void init() {}
+
+    int gewichtValerie;
+    int gewichtJeroen;
+    int gewichtHans;
+    int hoogtexas;
+
+    public void init() {
+
+        setSize(1000, 1000);
+        gewichtValerie = 45;
+        gewichtHans = 80;
+        gewichtJeroen = 100;
+        hoogtexas = 400;
+    }
 
     public void paint(Graphics g) {
+        g.drawString("50KG -", 60, 350 );
+        g.drawString("100KG -", 50, 300 );
 
-        g.drawLine(200,40,200,200);
-        g.drawLine(40,40,200,40);
-        g.drawString("50kg", 10, 120);
-        g.drawString("20kg", 10, 160);
-        g.drawString("100kg", 5, 80);
-        g.drawLine(40,200,200,200);
-        g.drawLine(40,200,40,40);
-        g.setColor(Color.red);
-        g.fillRect(60,140, 20,60);
-        g.setColor(Color.blue);
-        g.fillRect(100,100, 20,100);
-        g.setColor(Color.yellow);
-        g.fillRect(140,80, 20,120);
+        // lijn links
+        g.drawLine(100, 100, 100, hoogtexas);
+        //lijn onder
+        g.drawLine(400, 400, 100, hoogtexas);
+        //lijn boven
+        g.drawLine(400, 100, 100, 100);
+        //lijn rechts
+        g.drawLine(400, 100, 400, hoogtexas);
+        //gewichtValerie
+        g.setColor(Color.pink);
+        g.fillRect(110, hoogtexas - gewichtValerie, 50, gewichtValerie );
         g.setColor(Color.black);
-        g.drawString("Valarie 40kg", 10, 220);
-        g.drawString("Jeroen 100kg", 10, 240);
-        g.drawString("Hans 80kg", 10, 260);
-
+        g.drawString( "Valerie", 110, 420);
+        //gewichtJeroen
+        g.setColor(Color.blue);
+        g.fillRect(180, hoogtexas - gewichtJeroen, 50 , gewichtJeroen);
+        g.setColor(Color.black);
+        g.drawString("Jeroen",180, 420);
+        //gewichtHans
+        g.setColor(Color.red);
+        g.fillRect( 250, hoogtexas - gewichtHans, 50, gewichtHans );
+        g.setColor(Color.black);
+        g.drawString("Hans",260, 420);
     }
 
 
