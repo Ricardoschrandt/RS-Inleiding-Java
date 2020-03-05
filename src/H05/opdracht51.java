@@ -9,6 +9,8 @@ import java.awt.*;
             Color lijnkleur;
             int breedte;
             int hoogte;
+            int hoogte2;
+            int cirkelbreedte;
 
             public void init() {
                 //initialisatie.
@@ -16,6 +18,8 @@ import java.awt.*;
                 lijnkleur = Color.BLACK;
                 breedte = 200;
                 hoogte = 100;
+                cirkelbreedte = 100;
+
             }
 
             public void paint(Graphics g) {
@@ -25,9 +29,9 @@ import java.awt.*;
                 g.drawString("lijn", 180, 80);
 
                 g.setColor(opvulkleur);
-                g.fillArc(550, 100, 200, 100, 5, 45 );
+                g.fillArc(550, 100, breedte, hoogte, 5, 45 );
                 g.setColor(lijnkleur);
-                g.drawOval(550, 100, 200, 100 );
+                g.drawOval(550, 100, breedte, hoogte );
                 g.drawString("Taartpunt met ovaal eromheen", 570, 220);
 
                 g.drawRect(100, 100, breedte, hoogte);
@@ -51,7 +55,7 @@ import java.awt.*;
                 g.drawString("Gevulde Ovaal",370, 350);
 
                 g.setColor(lijnkleur);
-                g.drawOval(550, 225, 100, 100);
+                g.drawOval(550, 225,cirkelbreedte,hoogte);
                 g.drawString("Cirkel",580, 350);
             }
 
