@@ -2,40 +2,57 @@ package h8;
 
 import java.applet.Applet;
 import java.awt.*;
+import java.awt.Button;
+import java.awt.event.ActionListener;
 
 public class opdracht2 extends Applet {
 
-    TextField tekstvak;
-    Label label;
-    Button Knopster;
-    Button Knopslash;
-    Button knopplus;
-    Button knopmin;
+    String manaantal;
+    String vrouwaantal;
+    String meisjeaantal;
+    String jongenaantal;
+    String totaal;
+    Button MAN;
+    Button VROUW;
+    Button MEISJE;
+    Button JONGEN;
 
 public void init(){
 
-    tekstvak =new TextField(15 );
-    label = new Label("type een aantal");
-    add (label);
-    add (tekstvak);
+    MAN =new Button("MAN");
+    MAN.addActionListener(new opdracht2.MANlistener());
+    add (MAN);
 
-    knopplus =new Button("+");
-    add (knopplus);
 
-    knopmin =new Button("-");
-    add (knopmin);
 
-    Knopslash =new Button("/");
-    add (Knopslash);
+    VROUW =new Button("VROUW");
+    add (VROUW);
 
-   Knopster =new Button("*");
-    add (Knopster);
+
+    MEISJE =new Button("MEISJE");
+    add (MEISJE);
+
+
+   JONGEN =new Button("JONGEN");
+    add (JONGEN);
 
 
 }
 
-    public void paint(Graphics g) {
-        g.drawString("", 50, 60 );
+    public void paint (Graphics g) {
+        g.drawString("aantal mannen" + MAN, 155, 45);
+        g.drawString("aantal vrouwen" + VROUW, 185, 45);
+        g.drawString("aantal meisjes" + meisjeaantal, 215, 45);
+        g.drawString("aantal jongens" + jongenaantal, 245, 45);
+        g.drawString("Aantal Personen" + totaal, 100, 90);
+
+
     }
 
+    class MAN implements ActionListener {
+    MAN = ++
+    totaal = ++
+    repaint();
+
+    }
 }
