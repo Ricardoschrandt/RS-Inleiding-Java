@@ -6,16 +6,9 @@ import java.awt.event.*;
 
 public class opdracht2 extends Applet {
 
-    int ManAantal;
-    int VrouwAantal;
-    int JongensAantal;
-    int MeisjeAantal;
-    int Totale;
+    Button Man, Vrouw, Meisje, Jongen;
+    int ManAantal, VrouwAantal, JongensAantal, MeisjeAantal, Totale;
 
-    Button Man;
-    Button Vrouw;
-    Button Jongen;
-    Button Meisje;
 
 
     public void init() {
