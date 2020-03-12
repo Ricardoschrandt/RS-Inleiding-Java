@@ -1,58 +1,94 @@
 package h8;
 
-import java.applet.Applet;
 import java.awt.*;
-import java.awt.Button;
-import java.awt.event.ActionListener;
+import java.applet.*;
+import java.awt.event.*;
 
 public class opdracht2 extends Applet {
 
-    String manaantal;
-    String vrouwaantal;
-    String meisjeaantal;
-    String jongenaantal;
-    String totaal;
-    Button MAN;
-    Button VROUW;
-    Button MEISJE;
-    Button JONGEN;
+    int ManAantal;
+    int VrouwAantal;
+    int JongensAantal;
+    int MeisjeAantal;
+    int Totale;
 
-public void init(){
-
-    MAN =new Button("MAN");
-    MAN.addActionListener(new opdracht2.MANlistener());
-    add (MAN);
+    Button Man;
+    Button Vrouw;
+    Button Jongen;
+    Button Meisje;
 
 
+    public void init() {
 
-    VROUW =new Button("VROUW");
-    add (VROUW);
+        KnopListener kl = new KnopListener();
 
+        Man = new Button("Man");
+        Man.addActionListener(kl);
+        ManAantal = 0;
+        add(Man);
 
-    MEISJE =new Button("MEISJE");
-    add (MEISJE);
+        Vrouw= new Button("Vrouw");
+        Vrouw.addActionListener(new Vrouw());
+        VrouwAantal =0;
+        add(Vrouw);
 
+        Jongen = new Button("Jongen");
+        Jongen.addActionListener(new Jongen());
+        JongensAantal = 0;
+        add(Jongen);
 
-   JONGEN =new Button("JONGEN");
-    add (JONGEN);
-
-
-}
-
-    public void paint (Graphics g) {
-        g.drawString("aantal mannen" + MAN, 155, 45);
-        g.drawString("aantal vrouwen" + VROUW, 185, 45);
-        g.drawString("aantal meisjes" + meisjeaantal, 215, 45);
-        g.drawString("aantal jongens" + jongenaantal, 245, 45);
-        g.drawString("Aantal Personen" + totaal, 100, 90);
-
-
+        Meisje = new Button("Meisje");
+        Meisje.addActionListener(new Meisje());
+        MeisjeAantal = 0;
+        add(Meisje);
     }
 
-    class MAN implements ActionListener {
-    MAN = ++
-    totaal = ++
-    repaint();
+    public void paint(Graphics g) {
+        g.drawString("Mannen Aantal  " + ManAantal, 50, 80);
+        g.drawString("Vrouwen Aantal  " + VrouwAantal, 50, 100);
+        g.drawString("Jongens Aantal  " + JongensAantal, 50, 120);
+        g.drawString("Meiden Aantal " + MeisjeAantal, 50, 140);
+        g.drawString("Totaal aantal personen  " + Totale , 50, 180);
+        Totale= ManAantal + VrouwAantal + VrouwAantal + MeisjeAantal;
+    }
 
+    class KnopListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            ManAantal++;
+            Totale++;
+            repaint();
+        }
+    }
+
+    class Vrouw implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            VrouwAantal++;
+            Totale++;
+            repaint();
+        }
+    }
+
+    class Jongen implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            JongensAantal++;
+            Totale++;
+            repaint();
+        }
+    }
+
+    class Man implements ActionListener{
+        public void actionPerformed(ActionEvent e) {
+            JongensAantal++;
+            Totale++;
+            repaint();
+        }
+    }
+
+    class Meisje implements ActionListener{
+        public void actionPerformed(ActionEvent e) {
+            MeisjeAantal++;
+            Totale++;
+            repaint();
+        }
     }
 }
