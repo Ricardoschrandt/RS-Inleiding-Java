@@ -7,8 +7,9 @@ import java.awt.event.ActionListener;
 
 public class opdracht3 extends Applet{
 
-    Double Nummers;
     TextField tekstvak;
+    Double Nummers;
+
 
     public void init(){
 
