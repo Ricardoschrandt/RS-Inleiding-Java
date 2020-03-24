@@ -31,24 +31,20 @@ public class opdracht3 extends Applet {
                 repaint();
             }
 
-            String maanden {"", "januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","december"};
 
       switch (maand) {
-          case 1 :
-          case 3:
-          case 5:
-          case 7 :
-          case 9:
-          case 11:
-                    response = String maanden + (maand) = " heeft 31 dagen."; repaint();break;
-          case 4:
-              response = String maanden + (maand) = " heeft 28 dagen."; repaint();break;
-          case 2:
-          case 6:
-          case 8:
-          case 10:
-          case 12:
-              response = String maanden + maand = " heeft 30 dagen."; repaint();break;
+          case 1: response = "Januari heeft 31 dagen"; repaint(); break;
+          case 2: response = "Februari heeft 28 dagen"; repaint(); break;
+          case 3: response = "Maart heeft 31 dagen"; repaint(); break;
+          case 4: response = "April heeft 30 dagen"; repaint(); break;
+          case 5: response = "Mei heeft 31 dagen"; repaint(); break;
+          case 6: response = "Juni heeft 30 dagen"; repaint(); break;
+          case 7: response = "Juli heeft 31 dagen"; repaint(); break;
+          case 8: response = "Augustus heeft 30 dagen"; repaint(); break;
+          case 9: response = "September heeft 31 dagen"; repaint(); break;
+          case 10: response = "Oktober heeft 30 dagen"; repaint(); break;
+          case 11: response = "November heeft 31 dagen"; repaint(); break;
+          case 12: response = "December heeft 30 dagen"; repaint(); break;
       }
 
 
