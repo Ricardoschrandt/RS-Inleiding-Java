@@ -3,7 +3,7 @@ package h11;
 import java.applet.Applet;
 import java.awt.*;
 
-public class opdracht1 extends Applet {
+public class opdracht6 extends Applet {
 
 
     public void init() {}
