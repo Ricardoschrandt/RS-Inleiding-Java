@@ -39,7 +39,7 @@ import java.awt.event.ActionListener;
 
      class knopResetlistener implements ActionListener {
 
-         @Override
+
          public void actionPerformed(ActionEvent e) {
            String userInput = tekstvak.getText();
            tekstvak.setText("");

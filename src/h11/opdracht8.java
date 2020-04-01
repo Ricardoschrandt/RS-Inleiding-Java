@@ -7,14 +7,14 @@ public class opdracht8 extends Applet {
 
     public void paint (Graphics g) {
 
-        int y = 20 , x = 20 ;
+        int a = 20 , b = 20 ;
 
         for (int teller= 0 ; teller <= 100; teller++){
 
-            y +=10;
-            x +=10;
+            a += 10;
+            b += 10;
 
-            g.drawOval(20,20,y, x);
+            g.drawOval(20,20,a, b);
 
 
 
