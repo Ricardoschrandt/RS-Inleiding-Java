@@ -17,7 +17,7 @@ public class praktijk extends Applet {
 
     public void init() {
 
-        tafel = 1;
+
 
         tekstvak = new TextField(25);
         tekstvak.addActionListener(new tekstvakListener());
@@ -51,9 +51,9 @@ public class praktijk extends Applet {
     }
 
     public void paint(Graphics g) {
-        for(int s = 1; s < 11; s ++) {
-            g.drawString(tafel + " x " + tafel + " = " + (s * tafel), 100, s * 40);
-
+        for(int s = 0; s < 11; s++) {
+            g.drawString(s + " x " + tafel + " = " + (s * tafel), 100, s * 40);
+        g.drawString("als u een andere tafel druk OK ", 200, 200);
         }
 
         }
