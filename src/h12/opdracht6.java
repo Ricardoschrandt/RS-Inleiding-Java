@@ -7,12 +7,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class opdracht5 extends Applet {
+public class opdracht6 extends Applet {
 
 
     Button knopOK;
     TextField tekstvak;
-    int waarde[] = {1,10,20,30,40,50,60,70,80,90,100};
+    int waarde[] = {10,10,10,10,10,10,10,10,10,10};
     int Totaal;
 
 
@@ -36,12 +36,12 @@ public class opdracht5 extends Applet {
 
 
 
-                g.drawString("waarde: " + teller, 70, 50);
-                g.drawString("Index: " + waarde[teller], 70, 70);
+                g.drawString(String.valueOf(Totaal), 70, 50);
 
 
 
-                }
+
+            }
             teller++;
 
 
