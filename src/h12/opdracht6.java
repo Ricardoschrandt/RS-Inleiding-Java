@@ -59,4 +59,3 @@ public class opdracht6 extends Applet {
         }
     }
 }
-s
