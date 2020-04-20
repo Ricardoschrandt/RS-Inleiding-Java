@@ -13,7 +13,6 @@ public class Praktijkopdracht extends Applet {
     TextField tekstvaknaam, tekstvaktelnr;
     int index;
 
-
     public void init() {
 
         namen = new String[10];
